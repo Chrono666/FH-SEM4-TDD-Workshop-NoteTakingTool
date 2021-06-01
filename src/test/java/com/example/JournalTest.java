@@ -49,5 +49,14 @@ public class JournalTest {
         assertEquals(note4, note4InJournal);
     }
 
-
+    @Test
+    public void ensureIfNoteIsNotAddedToJournalTheJournalIsEmpty() {
+        // Arrange
+        Journal journal = new Journal();
+        // Act
+        Note note = new Note("Title", "body");
+        List<Note> noteList = journal.getNoteList();
+        // Assertion
+        assertTrue(noteList.isEmpty());
+    }
 }
