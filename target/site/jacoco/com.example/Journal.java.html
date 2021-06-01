@@ -3,7 +3,11 @@
 <span class="fc" id="L3">public class Journal {</span>
 
     public Note createNote(String title, String body) {
-<span class="fc" id="L6">        return new Note(title, body);</span>
+<span class="fc bfc" id="L6" title="All 2 branches covered.">        if (title.equals(&quot;&quot;)) {</span>
+<span class="fc" id="L7">            throw new IllegalStateException();</span>
+        } else {
+<span class="fc" id="L9">            return new Note(title, body);</span>
+        }
     }
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.6.202009150832</span></div></body></html>

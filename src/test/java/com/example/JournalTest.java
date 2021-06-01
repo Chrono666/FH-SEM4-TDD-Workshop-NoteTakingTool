@@ -3,6 +3,7 @@ package com.example;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 public class JournalTest {
 
@@ -22,5 +23,16 @@ public class JournalTest {
         assertEquals(expectedTitle, title);
         assertEquals(expectedBody, body);
     }
+
+    @Test
+    public void ensureIfNoteWithEmptyTitleIsCreatedAExceptionIsThrown() {
+        // Arrange
+        Journal journal = new Journal();
+        //Act & Assertion
+        assertThrows(IllegalStateException.class, ()->{
+            journal.createNote("", "This note has no title");
+        });
+    }
+
 
 }
