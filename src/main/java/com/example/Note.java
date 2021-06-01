@@ -1,8 +1,8 @@
 package com.example;
 
 public class Note {
-    private String title;
-    private String body;
+    private final String title;
+    private final String body;
 
     public Note(String title, String body) {
         this.title = title;

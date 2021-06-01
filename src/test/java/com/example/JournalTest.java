@@ -2,8 +2,9 @@ package com.example;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertThrows;
+import java.util.List;
+
+import static org.junit.jupiter.api.Assertions.*;
 
 public class JournalTest {
 
@@ -32,6 +33,23 @@ public class JournalTest {
         assertThrows(IllegalStateException.class, ()->{
             journal.createNote("", "This note has no title");
         });
+    }
+
+    @Test
+    public void ensureACreatedNoteIsAddedToAJournal(){
+        // Arrange
+        Journal journal = new Journal();
+        String expectedTitle = "TDD";
+        String expectedBody = "TDD is fun";
+        Note newNote = journal.createNote(expectedTitle, expectedBody);
+
+        // Act
+        List<Note> noteList = journal.addNoteToJournal(newNote);
+        boolean noteAddedToJournal = noteList.contains(newNote);
+
+        // Assert
+        assertTrue(noteAddedToJournal);
+
     }
 
 

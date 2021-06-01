@@ -10,7 +10,6 @@ Important metrics that have to be measured are the code coverage, and the mutati
 ## User Storys
 
 As a user I want to save a note in a journal.
-As a user I want to sort my notes by date.
 
 ## Required Tools
 
