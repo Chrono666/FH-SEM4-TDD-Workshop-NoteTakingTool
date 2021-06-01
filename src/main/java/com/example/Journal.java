@@ -14,4 +14,8 @@ public class Journal {
         noteList.add(note);
         return noteList;
     }
+
+    public List<Note> getNoteList() {
+        return noteList;
+    }
 }
