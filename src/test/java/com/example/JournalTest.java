@@ -59,4 +59,14 @@ public class JournalTest {
         // Assertion
         assertTrue(noteList.isEmpty());
     }
+
+    @Test
+    public void ensureAddingNoteWithNoTitleToJournalThrowsException(){
+        // Arrange
+        Journal journal = new Journal();
+        // Assert & Act
+        assertThrows(IllegalStateException.class, () -> {
+            journal.addNoteToJournal(new Note("", "body"));
+        });
+    }
 }
