@@ -4,8 +4,12 @@ public class Note {
     private final String title;
     private final String body;
 
-    public Note(String title, String body) {
-        this.title = title;
+    Note(String title, String body) {
+        if (title.equals("")) {
+            throw new IllegalStateException();
+        } else {
+            this.title = title;
+        }
         this.body = body;
     }
 

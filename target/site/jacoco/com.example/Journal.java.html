@@ -10,17 +10,9 @@ public class Journal {
 <span class="fc" id="L10">        noteList = new ArrayList&lt;&gt;();</span>
 <span class="fc" id="L11">    }</span>
 
-    public Note createNote(String title, String body) {
-<span class="fc bfc" id="L14" title="All 2 branches covered.">        if (title.equals(&quot;&quot;)) {</span>
-<span class="fc" id="L15">            throw new IllegalStateException();</span>
-        } else {
-<span class="fc" id="L17">            return new Note(title, body);</span>
-        }
-    }
-
     public List&lt;Note&gt; addNoteToJournal(Note note) {
-<span class="fc" id="L22">        noteList.add(note);</span>
-<span class="fc" id="L23">        return noteList;</span>
+<span class="fc" id="L14">        noteList.add(note);</span>
+<span class="fc" id="L15">        return noteList;</span>
     }
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.6.202009150832</span></div></body></html>
