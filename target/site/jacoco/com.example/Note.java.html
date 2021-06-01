@@ -2,13 +2,19 @@
 
 public class Note {
     private String title;
+    private String body;
 
-<span class="fc" id="L6">    public Note(String title) {</span>
-<span class="fc" id="L7">        this.title = title;</span>
-<span class="fc" id="L8">    }</span>
+<span class="fc" id="L7">    public Note(String title, String body) {</span>
+<span class="fc" id="L8">        this.title = title;</span>
+<span class="fc" id="L9">        this.body = body;</span>
+<span class="fc" id="L10">    }</span>
 
     public String getTitle() {
-<span class="fc" id="L11">        return title;</span>
+<span class="fc" id="L13">        return title;</span>
+    }
+
+    public String getBody() {
+<span class="fc" id="L17">        return body;</span>
     }
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.6.202009150832</span></div></body></html>
