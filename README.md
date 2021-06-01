@@ -7,9 +7,10 @@ This repository contains a simple project for the final paper assigned by the TD
 A simple project containing one user story with at least two test cases, implemented through the TDD approach.  
 Important metrics that have to be measured are the code coverage, and the mutation test coverage of the code.  
 
-## User Story
+## User Storys
 
 As a user I want to save a note in a journal.
+As a user I want to sort my notes by date.
 
 ## Required Tools
 
