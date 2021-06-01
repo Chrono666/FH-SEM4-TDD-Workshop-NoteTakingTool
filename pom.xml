@@ -34,6 +34,9 @@
         <junit.platform.surefire.provider>1.3.2</junit.platform.surefire.provider>
 
         <!-- SonarCloud Configuration -->
+            <sonar.projectKey>Chrono666_FH-SEM4-TDD-Workshop-NoteTakingTool</sonar.projectKey>
+            <sonar.organization>chrono666</sonar.organization>
+            <sonar.host.url>https://sonarcloud.io</sonar.host.url>
     </properties>
 
     <dependencies>
